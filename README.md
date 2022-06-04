@@ -4,7 +4,12 @@
 # Declaration
 
 1. 该项目仅供授权下使用，禁止使用该项目进行违法操作，否则自行承担后果，请各位遵守《中华人民共和国网络安全法》！！！
+1. This project shall be used under permission, any illegal use of this project is forbidden, otherwise any consequences shall be beared yourself, please do follow Network Security Law of the PRC!!!
 2. 由于是短时间熬夜所写，头脑昏昏，料想会有不少错误，欢迎指出，我的联系方式在下方已经贴出，不胜感激！
+2. Because this project was done in a short period, at nights, with dizzy head, it is therefore error prone, feel free to point out anything wrong you find, my contact is listed below, many thanks!
+
+
+
 
 # Interface-Display
 
@@ -15,8 +20,10 @@
 # Exploit-Example
 
 1. 我们想批量利用`向日葵RCE`漏洞，于是我们`base64加密`语句`body="Verification failure"`，得到：`Ym9keT0iVmVyaWZpY2F0aW9uIGZhaWx1cmUi`。
+1. We are going to make a helly goody use of `Sunflower RCE` the exploit, so we `base64` the expression `body="Verification failure"`, and get: `Ym9keT0iVmVyaWZpY2F0aW9uIGZhaWx1cmUi`. 
 
 2. 我们选取获取前100条：
+2. We select the top 100 results: 
 
    ![image-20220531213726915](https://www.png8.com/imgs/2022/05/31/afa7e27c633103bc.png)
 
@@ -25,16 +32,20 @@
    ![image-20220531213726915](https://www.png8.com/imgs/2022/05/31/776bab3b4dbdef4a.png)
 
 3. 直接点击`向日葵RCE一把梭`：
+3. Just click `向日葵RCE一把梭`:
 
       ![image-20220531213726915](https://www.png8.com/imgs/2022/05/31/cb3553eed09f13cc.png)
 
 4. 可以看到软件开始批量检测了（可能会出现短时间的空白，请耐心等待程序运行）：
+4. We can now see that the software has begun testing (The window might be blank for a short period, please wait with patience):
 
       ![image-20220531213726915](https://www.png8.com/imgs/2022/05/31/9bffe6b41d0ba93f.png)
 
       软件的线程数是`100`，可以自己对`exp`文件下的`xrk_rce.py`的第`58`行进行调整。（速度还是很快的）
+      The count of thread is `100`, and you can change it yourself by modifying line `58` in the file `xrk_rce.py` under the folder `exp`. (Not slow at all)
 
 5. **删除文件夹下`urls.txt`、`修正后的url.txt`、`host.txt`这三个文件，准备使用其他一键梭哈模块：**
+5. **Delete `urls.txt`, `修正后的url.txt` and `host.txt`, get ready to use other Soha With One Butt Module: **
 
    ![image-20220531213726915](https://www.png8.com/imgs/2022/05/31/e16e71a0fa2fee23.png)
 
