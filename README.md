@@ -4,7 +4,9 @@
 # Declaration
 
 1. 该项目仅供授权下使用，禁止使用该项目进行违法操作，否则自行承担后果，请各位遵守《中华人民共和国网络安全法》！！！
+1. This project shall be used under permission, illegal use of this project is forbidden, otherwise bear any consequences yourself, please do follow Network Security Law of PRC!!!
 2. 由于是短时间熬夜所写，头脑昏昏，料想会有不少错误，欢迎指出，我的联系方式在下方已经贴出，不胜感激！
+3. Because this project was done in a short period, at nights, with dizzy head, it is therefore error prone, feel free to point out anything wrong you find, many thanks!
 
 # Interface-Display
 
@@ -15,8 +17,10 @@
 # Exploit-Example
 
 1. 我们想批量利用`向日葵RCE`漏洞，于是我们`base64加密`语句`body="Verification failure"`，得到：`Ym9keT0iVmVyaWZpY2F0aW9uIGZhaWx1cmUi`。
+1. We are going to make use of `Sunflower RCE` the exploit, so we `base64` the expression `body="Verification failure"`, and get: `Ym9keT0iVmVyaWZpY2F0aW9uIGZhaWx1cmUi`.
 
 2. 我们选取获取前100条：
+2. Let's select the top 100 results: 
 
    ![image-20220531213726915](https://www.png8.com/imgs/2022/05/31/afa7e27c633103bc.png)
 
@@ -25,16 +29,20 @@
    ![image-20220531213726915](https://www.png8.com/imgs/2022/05/31/776bab3b4dbdef4a.png)
 
 3. 直接点击`向日葵RCE一把梭`：
+3. Just click `向日葵RCE一把梭`: 
 
       ![image-20220531213726915](https://www.png8.com/imgs/2022/05/31/cb3553eed09f13cc.png)
 
 4. 可以看到软件开始批量检测了（可能会出现短时间的空白，请耐心等待程序运行）：
+4. And the software starts testing (the window might be blank for a while, pleace wait with patience): 
 
       ![image-20220531213726915](https://www.png8.com/imgs/2022/05/31/9bffe6b41d0ba93f.png)
 
       软件的线程数是`100`，可以自己对`exp`文件下的`xrk_rce.py`的第`58`行进行调整。（速度还是很快的）
+      The count of thread is `100`, you can change it by modifying line `58` in the file `xrk_rce.py` under the folder `exp`
 
 5. **删除文件夹下`urls.txt`、`修正后的url.txt`、`host.txt`这三个文件，准备使用其他一键梭哈模块：**
+5. **Delete the three files `urls.txt`, `修正后的url.txt` and `host.txt`, get ready to use other Suoha With One Butt Modules: **
 
    ![image-20220531213726915](https://www.png8.com/imgs/2022/05/31/e16e71a0fa2fee23.png)
 
@@ -50,9 +58,16 @@
    ```
    
 2. 点击左上角的`软件配置`配置`fofa`的`email`和`key`（注意不是密码，而是`https://fofa.info/personalData`下方的`API KEY`），然后就可以愉快地使用`fofa搜索`啦。
+2. Config `email` and `key` of `fofa` by clicking `软件配置` at the upper left corner (Be aware that it's not password, but the `API KEY` near the bottom of `https://fofa.info/personalData`), and now enjoy `fofa搜索`.
+
 3. 搜集完成之后，软件的同级目录下会生成`urls.txt`、`修正后的url.txt`、`host.txt`，分别保存`采集的原始url`、添加了`http/https头的url`、`仅网站IP`。
+3. When collecting is done, `urls.txt`, `修正后的url.txt` and `host.txt` will be generated under the same folder as the software, blablablablabla?????
+
 4. 完成一次扫描任务后，若要开启下一次扫描，请删除文件夹下`urls.txt`、`修正后的url.txt`、`host.txt`这三个文件。
+4. After the first scan, delete `urls.txt`, `修正后的url.txt`, `host.txt` before next scan. 
+
 5. 如果您在使用中遇到任何问题、有活泼的想法，您有三种途径与我反馈交流：
+5. If you encountered any problem or have any fascinating idea, you can contact me in 3 ways: 
 
 ```python
 mailto:sharecat2022@gmail.com
@@ -60,12 +75,16 @@ mailto:sharecat2022@gmail.com
 https://github.com/W01fh4cker/Serein/issues
 
 添加微信：W01fh4cker
+WeChat: W01fh4cker
 ```
 
 # Version  
 ### >`V1.2`（增加Actively Exploited Atlassian Confluence 0Day CVE-2022-26134的一键梭哈模块）  
+### >`V1.2`（Added Suoha With One Butt Module from Actively Exploited Atlassian Confluence 0Day CVE-2022-26134）  
 ### >`V1.1`（增加ip反查域名功能，2022.6.3凌晨已经实现了权重查询，但是运行会卡死，预计2022.6.3晚发布带有权重查询筛选的版本）  
+### >`V1.1`（Added reverse ip lookup, weighted search available since the early morning of 2022.6.3, though it hangs when run, the new version with weighted search filtering is planned to be released at the night of 2022.6.3）  
 ### >`V1.0`（采集意见版）
+### >`V1.0`（Version for comments）
 
 # To-Do List
 1. 由于最近临近期末，时间很紧，所以匆忙写了三个`nday`的一键梭哈模块，考完试之后会加上`用友OA`等一大批`OA`、`DeDeCMS`等一大批`CMS`的的一键梭哈模块。目前预留的位置是`51`个，短时间看应该是够用的。
